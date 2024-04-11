@@ -2,7 +2,7 @@
 # INSTALL .: `pre-commit install --overwrite --install-hooks`
 # UPDATE ..: `pre-commit autoupdate`
 default_language_version:
-  python: python3.10
+  python: python3.8
 exclude: '\.svg$'
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -49,7 +49,7 @@ repos:
           - "--application-directories=.:source"
           - "--py38-plus"
   # Python: lint with black
-  - repo: https://github.com/psf/black
+  - repo: https://github.com/psf/black-pre-commit-mirror
     rev: 23.12.1
     hooks:
       - id: black
